@@ -1,6 +1,6 @@
-🔍 Nmap Notes & Practice (Beginner → Intermediate)
+ Nmap Notes & Practice (Beginner → Intermediate)
 
-📌 Introduction
+ Introduction
 
 Nmap (Network Mapper) is a powerful network scanning tool used for:
 
@@ -11,7 +11,7 @@ Nmap (Network Mapper) is a powerful network scanning tool used for:
 
 ---
 
-⚙️ Basic Syntax
+ Basic Syntax
 
 nmap [options] target
 
@@ -21,9 +21,9 @@ nmap -sS -p- 192.168.1.1
 
 ---
 
-🔹 Important Commands I Learned
+ Important Commands I Learned
 
-🔍 Basic Scan
+ Basic Scan
 
 nmap 192.168.1.1
 
@@ -31,7 +31,7 @@ Detects open ports on the target.
 
 ---
 
-⚡ Fast Scan
+ Fast Scan
 
 nmap -F 192.168.1.1
 
@@ -39,7 +39,7 @@ Scans top 100 common ports (faster).
 
 ---
 
-🧠 Service Version Detection
+Service Version Detection
 
 nmap -sV 192.168.1.1
 
@@ -47,7 +47,7 @@ Detects service versions running on open ports.
 
 ---
 
-🛠️ OS Detection
+OS Detection
 
 nmap -O 192.168.1.1
 
@@ -55,7 +55,7 @@ Attempts to identify the operating system.
 
 ---
 
-🔥 Aggressive Scan
+Aggressive Scan
 
 nmap -A 192.168.1.1
 
@@ -68,7 +68,7 @@ Includes:
 
 ---
 
-🎯 Full Port Scan
+Full Port Scan
 
 nmap -p- 192.168.1.1
 
@@ -76,7 +76,7 @@ Scans all ports (1–65535).
 
 ---
 
-🕵️ SYN Scan (Stealth Scan)
+SYN Scan (Stealth Scan)
 
 nmap -sS 192.168.1.1
 
@@ -84,9 +84,9 @@ Fast and stealthy scan (half-open connection).
 
 ---
 
-🧪 My Practice & Understanding
+My Practice & Understanding
 
-🔹 Example Scan
+ Example Scan
 
 nmap -p- -sV target_ip
 
@@ -98,7 +98,7 @@ Output Understanding:
 
 ---
 
-🧠 Key Concepts I Learned
+ Key Concepts I Learned
 
 - Open port = a running service
 - Service versions help identify vulnerabilities
@@ -107,7 +107,7 @@ Output Understanding:
 
 ---
 
-🔍 Output Analysis Thinking
+Output Analysis Thinking
 
 - Port 80 open → Website available → Next step: web enumeration
 - Port 22 open → SSH → Possible brute force or credential attack
@@ -115,7 +115,7 @@ Output Understanding:
 
 ---
 
-⚠️ Important Notes
+ Important Notes
 
 - Scanning random internet targets may be illegal
 - Only scan:
@@ -124,14 +124,14 @@ Output Understanding:
 
 ---
 
-🚀 Tools & Platforms for Practice
+Tools & Platforms for Practice
 
 - TryHackMe → Beginner-friendly labs
 - Hack The Box → Real-world practice
 
 ---
 
-🧠 What I Learned Overall
+What I Learned Overall
 
 - Nmap is not just a tool, it is a decision-making tool
 - The most important skill is deciding the next step after scanning
@@ -139,7 +139,7 @@ Output Understanding:
 
 ---
 
-🚀 Next Learning Plan
+Next Learning Plan
 
 - NSE Scripts ("--script vuln")
 - Web Enumeration (gobuster, dirsearch)
